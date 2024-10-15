@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEFA Nations League Stream</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #101010;
+            color: #ffffff; 
+            text-align: center;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #202020;
+        }
+
+        header h1 {
+            color: limegreen;
+            margin: 0;
+        }
+
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        /* Banner Section */
+        .banner {
+            background-color: #ff0000;
+            padding: 15px 0;
+        }
+
+        .banner p {
+            margin: 0;
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        /* Main Content */
+        main {
+            margin: 50px 0;
+        }
+
+        /* Video Player Mock */
+        .video-player {
+            position: relative;
+            display: inline-block;
+            max-width: 90%;
+            width: 800px;
+            height: 450px;
+            background-color: #000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease; /* Transition for background color */
+            overflow: hidden;
+        }
+
+        .video-player img {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.774);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease; 
+        }
+
+        .pps{
+            display: flex;
+            gap: 20%;
+        }
+
+        
+        .play-pause {
+            margin-left: 15px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .sound {
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+        }
+
+        .settings,
+        .fullscreen {
+            font-size: 15px;
+            color: white;
+            cursor: pointer;
+            margin-left: 20px;
+
+        }
+        .fullscreen{
+            font-size: 18px;
+        }
+
+        .fullscreen {
+            margin-right: 25px;
+        }
+
+        .live {
+            background-color: red;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        /* Center Play Icon */
+        .center-play {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: white;
+            opacity: 0; /* Hidden by default */
+            transition: opacity 0.3s ease; /* Transition for fade in/out */
+        }
+
+        /* Show play icon on hover */
+        .video-player:hover .center-play {
+            opacity: 1; /* Show play icon */
+        }
+
+        /* Call-to-Action Button */
+        .cta {
+            margin-top: 20px;
+        }
+
+        .watch-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #3e1a4b;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .watch-button:hover {
+            background-color: #381844;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Soccer TV</h1>
+        </div>
+        <div class="nav">
+            <a href="#">Login</a> | <a href="#">Register</a>
+        </div>
+    </header>
+    
+    <!-- Banner Section -->
+    <div class="banner">
+        <p>Watch UEFA Nations League 2024 Live Stream</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Video Player Mock -->
+        <div class="video-player">
+            <img src="image.png" alt="UEFA Nations League">
+            <div class="controls">
+                <div class="pps">
+                    <div class="play-pause">&#9658;</div> <!-- Play Icon -->
+                <div class="sound">🔊</div> <!-- Sound Icon -->
+                </div>
+                <div class="status">
+                    <span class="live">LIVE</span>
+                    <div class="settings">⚙️</div> <!-- Settings Icon -->
+                    <div class="fullscreen">⛶</div> <!-- Fullscreen Icon -->
+                </div>
+            </div>
+            <div class="center-play">&#9658;</div> <!-- Center Play Icon -->
+        </div>
+
+        <!-- Call-to-Action Button -->
+        <div class="cta">
+            <a href="#" class="watch-button">Watch Live Now</a>
+        </div>
+    </main>
+</body>
+</html>
